@@ -1,0 +1,108 @@
+/* General page layout */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  background: #004080;
+  color: white;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+/* Main grid layout */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section styling (cards) */
+section {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Chart containers */
+.responsive-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+
+/* Responsive SVG scaling */
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Axis styling */
+.axis path,
+.axis line {
+  stroke: #888;
+}
+
+.axis text {
+  font-size: 12px;
+  fill: #333;
+}
+
+/* Bar chart styling */
+rect {
+  transition: fill 0.2s;
+}
+
+rect:hover {
+  fill: darkorange;
+  cursor: pointer;
+}
+
+/* Scatter plot points */
+circle {
+  opacity: 0.7;
+  transition: opacity 0.2s, r 0.2s;
+}
+
+circle:hover {
+  opacity: 1;
+  r: 6;
+  fill: crimson;
+}
+
+/* Donut chart */
+path {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+path:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Energy & Spot Prices Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>TV Energy Consumption & Spot Prices</h1>
+  <p style="text-align:center">This page shows different D3 chart types built from CSV data.</p>
+
+  <main>
+    <section>
+      <h2>Scatter: Energy Consumption vs Star Rating</h2>
+      <div id="scatter" class="responsive-svg-container"></div>
+    </section>
+
+    <section>
+      <h2>Donut: Energy by Screen Technology (All TVs)</h2>
+      <div id="donut" class="responsive-svg-container"></div>
+    </section>
+
+    <section>
+      <h2>Bar: Energy by Screen Technology (55-inch TVs)</h2>
+      <div id="bars55" class="responsive-svg-container"></div>
+    </section>
+
+    <section>
+      <h2>Line: Spot Power Prices (1998–2024)</h2>
+      <div id="linechart" class="responsive-svg-container"></div>
+    </section>
+  </main>
+
+  <!-- JS scripts -->
+  <script src="js/scatter.js"></script>
+  <script src="js/donut.js"></script>
+  <script src="js/bars55.js"></script>
+  <script src="js/line.js"></script>
+</body>
+
+</html>
